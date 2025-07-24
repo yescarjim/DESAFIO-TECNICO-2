@@ -1,0 +1,101 @@
+
+@import url('https://fonts.cdnfonts.com/css/ukij-chiwer-kesme');
+
+:root{
+  --color-fondo: #c2c0c3;
+  --color-texto:#011310;
+  --color-enfasis:#4369D9;
+  --color-enfasis2:#F2B885;
+  --tamaño-títulos: 30px;
+}
+
+
+--------/*Header*/-----
+
+*{margin: 0;
+}
+
+body{
+    font-family: 'UKIJ Chiwer Kesme', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    overflow-x: hidden;
+
+}
+
+
+header{
+    width: 97vw;
+    height:6vw;
+    background-color: var(--color-enfasis);
+    margin: 6px;
+    border-radius: 25px;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    margin: 10px;
+    
+}
+
+.Lista{
+    display: flex;
+    gap: 50vw;
+    }
+
+
+.logo{
+    width: 85px;
+    height: 85px; 
+    justify-content: center;
+    }  
+
+    h3{
+      margin: 15px;
+     text-align: left
+    }
+
+a{color: var(--color-texto);
+    text-decoration: none;}
+
+    h1{
+        text-align: center;
+        font-size: 50;}
+   
+
+----------/*main*/------
+
+    main{
+        border: solid;
+        margin: auto;
+        width: 97vw;
+        justify-items: auto;
+        flex-direction:column;
+        gap: 20px;
+    }
+
+
+    img{
+        max-width: 400px;
+        float: initial;
+        border: 3px solid #fff;
+
+    }
+
+    .contenedor{
+    background-color: var(--color-fondo);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 5px;
+    }
+
+
+    ---------/*footer*/--------
