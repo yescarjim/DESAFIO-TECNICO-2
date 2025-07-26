@@ -1,93 +1,173 @@
-
 @import url('https://fonts.cdnfonts.com/css/ukij-chiwer-kesme');
 
-:root{
-  --color-fondo: #c2c0c3;
-  --color-texto:#011310;
-  --color-enfasis:#4369D9;
-  --color-enfasis2:#F2B885;
-  --tamaño-títulos: 30px;
+:root {
+    --color-fondo: #fbfff1;
+    --color-texto: #0f0420;
+    --color-enfasis: #183768;
+    --color-enfasis2: #b4c5e4;
+    --tamaño-títulos: 30px;
 }
 
 
---------/*Header*/-----
+--------
 
-*{margin: 0;
+/*Header*/
+----- * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-body{
+
+body {
     font-family: 'UKIJ Chiwer Kesme', sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+    background-color: var(--color-texto);
+    color: white;
     overflow-x: hidden;
 
 }
 
 
-header{
+nav {
     width: 97vw;
-    height:6vw;
+    height: 10vh;
     background-color: var(--color-enfasis);
     margin: 6px;
     border-radius: 25px;
+    padding-top: 20px;
+    /* margin: 20px;*/
+}
 
+.Lista {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    margin-right: 50px;
+    /*margin-top: 30px;*/
+}
+
+.Lista a {
+    color: var(--color-fondo);
+    text-decoration: none;
 }
 
 
-nav{
+.Perfil {
     display: flex;
-    align-items: center;
-    justify-content: initial;
-    margin: 10px;
+    flex-flow: wrap;
+    gap: 20px;
+    font-size: 30%;
     
 }
 
-.Lista{
+.brand {
+    display: grid;
+    color: #2055aa;
+}
+
+h1 {
     display: flex;
-    gap: 50vw;
+    font-size: 35px;
+
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30PX;
+}
+
+
+.contenedor-Proyectos {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.contenedor-Proyectos img {
+    width: 700px;
+    height: 280px;
+    text-align: center;
+    margin: 7px;
+}
+
+.contenedor {
+    display: flex;
+    border: solid #0f0420;
+    color: var(--color-texto);
+    text-align: center;
+    width: 400px;
+    height: 200px;
+
+}
+
+h3 {
+    margin: 10px;
+    text-align: left;
+    font-size: 30px;
+
+}
+
+
+.brand span {
+    color: rgb(252, 253, 253);
     }
 
 
-.logo{
-    width: 85px;
-    height: 85px; 
+
+
+.logo {
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
     justify-content: center;
-    }  
-
-    h3{
-      margin: 15px;
-     text-align: left
-    }
-
-a{color: var(--color-texto);
-    text-decoration: none;}
-
-    h1{
-        text-align: center;
-        font-size: 50;}
-   
-
-----------/*main*/------
-
-    main{
-        border: solid;
-        margin: auto;
-        width: 97vw;
-        justify-items: auto;
-        flex-direction:column;
-        gap: 20px;
-    }
+}
 
 
-    img{
-        max-width: 400px;
-        float: initial;
-        border: 3px solid #fff;
 
-    }
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
 
-    .contenedor{
-    background-color: var(--color-fondo);
+h1 {
+    text-align: center;
+    font-size: 50;
+}
+*/
+
+----------
+
+/*main*/
+------ main {
+    border: solid;
+    margin: auto;
+    width: 97vw;
+    justify-items: auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+img {
+    max-width: 400px;
+    float: initial;
+    border: 3px solid #fff;
+    display: flexbox;
+
+
+}
+
+
+.contenedor {
+    background-color: var(--color-enfasis2);
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -95,7 +175,20 @@ a{color: var(--color-texto);
     align-items: center;
     padding: 4px;
     gap: 5px;
-    }
+}
 
+.semantica {
+    width: 58%;
+    border-radius: 15px;
+}
 
-    ---------/*footer*/--------
+-------------
+
+/*footer*/
+.final {
+    display: flex;
+    justify-items: end;
+    text-decoration: none;
+    color: aqua;
+    border: solid red;
+}
